@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Analytics Dashboard by Aryan</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: "Segoe UI", sans-serif;
+            background: #0d1117;
+            color: #e6edf3;
+        }
+
+        header {
+            background: linear-gradient(135deg, #00f5d4, #00bbf9, #fee75c);
+            color: #0d1117;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        h1 { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 700; margin-bottom: 10px; }
+
+        .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+
+        .section {
+            background: #161b22;
+            margin: 30px 0;
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid #30363d;
+            box-shadow: 0 0 20px rgba(0, 245, 212, 0.15);
+        }
+
+        h2 { color: #00f5d4; font-size: 2rem; margin-bottom: 20px; display: flex; align-items: center; gap: 15px; }
+
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 20px; margin: 20px 0; }
+        .gallery img { width: 100%; border-radius: 15px; transition: 0.3s; }
+        .gallery img:hover { transform: scale(1.05); box-shadow: 0 20px 50px rgba(0, 245, 212, 0.3); }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 30px 0; }
+        
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+            background: linear-gradient(135deg, #161b22, rgba(0, 245, 212, 0.1));
+            border: 2px solid #30363d;
+            border-radius: 15px;
+            color: #e6edf3;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            border-color: #00f5d4;
+            background: linear-gradient(135deg, rgba(0, 245, 212, 0.1), rgba(0, 187, 249, 0.1));
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 245, 212, 0.3);
+        }
+
+        .btn i { font-size: 1.5rem; color: #00f5d4; }
+
+        footer { background: #161b22; padding: 40px 20px; text-align: center; border-top: 1px solid #30363d; margin-top: 60px; }
+
+        @media (max-width: 768px) {
+            .section { padding: 25px; margin: 20px 10px; }
+            .gallery { grid-template-columns: 1fr; }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>E-commerce sales data Analytics Dashboard by Aryan</h1>
+        <p>Created interactive dashboard to track and analyze online sales data</p>
+    </header>
+
+    <div class="container">
+        <!-- Preview Section -->
+        <section class="section">
+            <h2><i class="fas fa-eye"></i> Dashboard Preview</h2>
+            <div class="gallery">
+                <img src="newbi2.png" alt="Dashboard Screenshot">
+                <img src="newbi2.gif" alt="Animated Preview">
+            </div>
+        </section>
+
+
+
+        <!-- Data Section -->
+
+        <section class="section">
+            <h2><i class="fas fa-database"></i> Source Data</h2>
+            <div class="grid">
+                <a href="newbi2.xlsx" download class="btn">
+                    <i class="fas fa-file-excel"></i>
+                    <span>Download Excel File_1</span>
+                </a>
+
+                <a href="newbi2.xlsx" download class="btn">
+                    <i class="fas fa-file-excel"></i>
+                    <span>Download Excel File_2</span>
+                </a>
+
+                
+                <a href="newbi2.csv" download class="btn">
+                    <i class="fas fa-file-csv"></i>
+                    <span>Download CSV File_1</span>
+                </a>
+
+                <a href="newbi2.csv" download class="btn">
+                    <i class="fas fa-file-csv"></i>
+                    <span>Download CSV File_2</span>
+                </a>
+            </div>
+        </section>
+        
+        
+
+
+
+        <!-- Downloads Section -->
+        <section class="section">
+            <h2><i class="fas fa-download"></i> Download dashboard</h2>
+            <div class="grid">
+                <a href="newbi2.pbix" download class="btn">
+                    <i class="fas fa-file-powerpoint"></i>
+                    <span>.pbix File</span>
+                </a>
+                <a href="newbi2.pdf" target="_blank" class="btn">
+                    <i class="fas fa-file-pdf"></i>
+                    <span>PDF Report</span>
+                </a>
+                <a href="newbi2.docx" target="_blank" class="btn">
+                    <i class="fas fa-file-word"></i>
+                    <span>Documentation</span>
+                </a>
+              
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Power BI Dashboard Project</p>
+    </footer>
+</body>
+</html>
